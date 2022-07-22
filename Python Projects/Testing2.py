@@ -65,6 +65,13 @@ for row in number_grid:
 
 #######WORKING WITH FILES##########
 
-games_list = open("Games.txt", "r")
+def opFile():
+    games_list = open("D:\Vstudio\Dir\Repo\Practice-Samples\Python Projects\games.txt", "r")
+    return games_list
+
+games_list = opFile()
 games_list.readable()
+
+games = games_list.read()
+print(games)
 games_list.close()
